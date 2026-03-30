@@ -4,6 +4,8 @@ var TourConfig = {
     HomeIndex: 231,
     DefaultDescrip: "Wallace Tour",
     DefaultVerboseDescrip: "Highland Ave, Solana Beach, CA",
+    UseSmallImages: true,
+    UseLargeImages: false,
     InfoHtml: `
       <div style="font-size:29px; font-style:italic; font-weight:bold; text-indent: 15px; line-height: 2.5;">
       Tour of Helen and Bim Wallace's House

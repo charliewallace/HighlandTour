@@ -398,7 +398,7 @@ To use both, set "UseSmallImages" to true and "UseLargeImages" to true in tour_c
     const AppVersion = "v0.1.0";
     var TourConfig = window.TourConfig || {};
     var HomeIndex = TourConfig.HomeIndex || 231;
-    var ImageFilePrefix = "P0001";
+    var ImageFilePrefix = "";
     var TheIndex = HomeIndex;
     var TheOldIndex = -1;
     var TheRec;
@@ -410,8 +410,10 @@ To use both, set "UseSmallImages" to true and "UseLargeImages" to true in tour_c
     var IntervalId = 0;
     var IntervalCount = 0;
     var InZipState = false;
-    var SmallImagesOnly = true;
-    var LargeImagesOnly = false;
+    var _useSmall = TourConfig.UseSmallImages !== undefined ? TourConfig.UseSmallImages : false;
+    var _useLarge = TourConfig.UseLargeImages !== undefined ? TourConfig.UseLargeImages : true;
+    var SmallImagesOnly = _useSmall && !_useLarge;
+    var LargeImagesOnly = _useLarge && !_useSmall;
 
 
     //----------------------------------------------------------
@@ -1120,6 +1122,14 @@ To use both, set "UseSmallImages" to true and "UseLargeImages" to true in tour_c
 
         //console.log("In buildLookupIndex(), theLine = " + theLine);
         firstChar = theLine[0];
+
+        if (firstChar === '+') {
+          if (parts.length > 1) {
+            ImageFilePrefix = parts[1].trim();
+          }
+          continue;
+        }
+
         if (firstChar >= '0' && firstChar <= '9') {
           // the line starts with a digit, treat it as a link line
 
@@ -1148,19 +1158,26 @@ To use both, set "UseSmallImages" to true and "UseLargeImages" to true in tour_c
             //  if the destination link line includes a quoted string = image name but without the .jpg
             ImagesIdx[index] = ImageFilePrefix + field;  // don't include the .jpg, will add later.
 
-            // Check if a quoted filename is provided; if so, it supercedes the index-based name.
-            // Must be the second field of the link line. May include folder name.
-            field = parts[1].trim();
-
-            firstChar = field.charAt(0); // get first char
-
-            if (firstChar == '\"') { // opening dbl quote of optional imageName
-              if (field.charAt(field.length - 1) != '\"') {
-                window.alert("Warning - bad link like syntax for index = " + index + ". Closing dbl quote missing.");
+            // Check if an explicit filename is provided; if so, it supercedes the index-based name.
+            var hasExplicitName = false;
+            
+            for (var p = 1; p < parts.length; p++) {
+              var pField = parts[p].trim();
+              if (pField.charAt(0) === '"' || pField.startsWith('i"')) {
+                hasExplicitName = true;
+                if (pField.charAt(0) === '"') {
+                  if (pField.charAt(pField.length - 1) != '\"') {
+                    window.alert("Warning - bad link like syntax for index = " + index + ". Closing dbl quote missing.");
+                  }
+                  // SUPERCEDE the index-based filename
+                  ImagesIdx[index] = pField.slice(1, pField.length - 1); // remove the quotes
+                }
+                break;
               }
+            }
 
-              // SUPERCEDE the index-based filename
-              ImagesIdx[index] = field.slice(1, field.length - 1) // remove the quotes
+            if (!hasExplicitName && ImageFilePrefix === "") {
+               window.alert("Warning - no ImageFilePrefix defined and no explicit image name provided for link index " + index);
             }
 
             // check the next line; if starts with non-numeric char treat as Optional description
