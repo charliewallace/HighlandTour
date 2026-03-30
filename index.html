@@ -197,36 +197,9 @@ td {
 
   <div id="infoPage" class="container" style="display:none; padding:3px;">
     <button class="button" onclick="doExit()">Home</button>
-    <div class="info-text" style="width:95%; line-height:1.2; padding-left:30px; font-size:20px;" >
-      <div style="font-size:29px; font-style:italic; font-weight:bold; text-indent: 15px; line-height: 2.5;">
-      Tour of Helen and Bim Wallace's House
-      </div>
-      <div style="line-height:1.1;">
-        This is a tour of the home of Helen and Bim Wallace, circa October 1999, 
-        located at 1036 Highland Drive, Solana Beach, California. They lived here from late 1969 to May 2015.
-        <p>Arrow buttons are provided allowing you to navigate the house and grounds. 
-        Most of the photos were taken on that day, but a lot of family pictures from both earlier 
-        and later are also included; you can click on "Later" and "Earlier" buttons to see them. 
-        TIP: On a laptop or PC, you can use the keyboard arrow keys to move around, 
-        O/C keys to open/close, N/P for next/previous, and so on.
-      </div>
+    <div class="info-text" style="width:95%; line-height:1.2; padding-left:30px; font-size:20px;" id="infoHtmlContainer">
     </div>
-    <div >
-      <p style="padding-left:30px;">Click on the shortcut links below to jump directly to places in the tour:</p>
-      <ul class="shortcut-links">
-        <li><a href="#" onclick="doJumpToIndex(960)">Helen Portraits</a> - Good portraits of Helen. <a href="#" onclick="doJumpToIndex(935)">Helen with others</a>.</li>
-        <li><a href="#" onclick="doJumpToIndex(949)">Bim Portraits</a> - Good portraits of Bim. <a href="#" onclick="doJumpToIndex(917)">Bim with others</a>.</li>
-        <li><a href="#" onclick="doJumpToIndex(954)">Helen and Bim</a>.</li>
-        <li><a href="#" onclick="doJumpToIndex(822)">Hogmenay 2008</a> - Family Hogmanay (Christmas) celebration on Jan 1st, 2008.</li>
-        <li><a href="#" onclick="doJumpToIndex(827)">65th Anniversary & Helen's 90th</a> - Celebration on Apr 12, 2012, of their 65th anniv. (Apr 6th) and Helen's 90th birthday (Apr 10).</li>
-        <li><a href="#" onclick="doJumpToIndex(908)">Reunions</a> - Family Reunions & groups, in 1973, May 77, Apr 96, Aug 87, July 01, and July 09.</li>
-        <li><a href="#" onclick="doJumpToIndex(540)">Bim machine demos</a> - Bim in the middle shop doing demos of the Tape Caster, Printer, and Stacker he was building.</li>
-        <li><a href="#" onclick="doJumpToIndex(148)">Kitchen</a> - Shortcut to the kitchen.</li>
-        <li><a href="#" onclick="doJumpToIndex(502)">Machine Shop</a> - Shortcut to Bim in the Machine Shop.</li>
-        <li><a href="#" onclick="doJumpToIndex(375)">Boat</a> - Shortcut to Bim's sailboat, the Gertrude. You can go inside.</li>
-        <li><a href="#" onclick="doJumpToIndex(349)">Outside Lab</a> - Shortcut to just outside the basement lab door.</li>
-      </ul>
-      <p><i>Photos by Charles L. Wallace.</i></p>
+    <div id="shortcutsHtmlContainer">
     </div>
   </div>
 
@@ -397,18 +370,20 @@ td {
 <br/>
 </font>
 
+<script src="tour_config.js"></script>
 <script src="tour_links.js"></script>
 <script>
 
 // all global vars are capitalized
-var HomeIndex = 231;
+var TourConfig = window.TourConfig || {};
+var HomeIndex = TourConfig.HomeIndex || 231;
 var ImageFilePrefix = "P0001";
 var TheIndex = HomeIndex;
 var TheOldIndex = -1;
 var TheRec;
 var OldRec = TheRec;
-var TheDescrip = "Wallace Tour";
-var TheVerboseDescrip = "Highland Ave, Solana Beach, CA";
+var TheDescrip = TourConfig.DefaultDescrip || "Wallace Tour";
+var TheVerboseDescrip = TourConfig.DefaultVerboseDescrip || "Highland Ave, Solana Beach, CA";
 var ImageName = "";
 var UserDefLinkName = "";
 var IntervalId = 0;
@@ -1023,31 +998,17 @@ function doZip() {
   IntervalCount = 0;
   IntervalId = -1;
   console.log("doZip() TheIndex=" + TheIndex);
-  switch(TheIndex) {
-    case 957: // zip to fudge hiding place from kitchen
-      document.getElementById('HomeButton').style.display = "none";
-      IntervalId = setInterval(doZipEvent, 800, TheIndex, "bllflflflloffflffofrrfrfro");
-      break;
-    case 520: // zip to kitchen from fudge hiding place
-      document.getElementById('HomeButton').style.display = "none";
-      IntervalId = setInterval(doZipEvent, 800, TheIndex, "rflflofffffofrrfrfrfle");
-      break;
-    case 234: // zip around the outside of the property - outer circuit
-      document.getElementById('HomeButton').style.display = "none";
-      IntervalId = setInterval(doZipEvent, 800, TheIndex, "frfroffffrofrflfffrffrfll");
-      break;
-    case 232: // zip around the outside of the house - inner circuit
-      document.getElementById('HomeButton').style.display = "none";
-      IntervalId = setInterval(doZipEvent, 800, TheIndex, "ffffffrrofrfffofrf");
-      break;
-    case 666: // zip from porch outside kitchen to sailboat
-      document.getElementById('HomeButton').style.display = "none";
-      IntervalId = setInterval(doZipEvent, 800, TheIndex, "rfrffrflflloffflffofrrff");
-      break;
-    default:
-      InZipState = false;
-      doNav('=');
-      break;
+  var zipMacro = null;
+  if (typeof TourConfig !== 'undefined' && TourConfig.ZipMacros) {
+    zipMacro = TourConfig.ZipMacros[TheIndex];
+  }
+  
+  if (zipMacro) {
+    document.getElementById('HomeButton').style.display = "none";
+    IntervalId = setInterval(doZipEvent, 800, TheIndex, zipMacro);
+  } else {
+    InZipState = false;
+    doNav('=');
   }
   
   if (InZipState) {
@@ -1280,6 +1241,21 @@ function lookupData(index) {
 //  set up the page appropriately
 document.addEventListener("DOMContentLoaded", function() {   
   
+    if (typeof TourConfig !== 'undefined') {
+      if (TourConfig.PageTitle) document.title = TourConfig.PageTitle;
+      if (TourConfig.MetaDescription) {
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) metaDesc.content = TourConfig.MetaDescription;
+      }
+      if (TourConfig.InfoHtml) {
+        var infoHtmlContainer = document.getElementById('infoHtmlContainer');
+        if (infoHtmlContainer) infoHtmlContainer.innerHTML = TourConfig.InfoHtml;
+      }
+      if (TourConfig.ShortcutsHtml) {
+        var shortcutsHtmlContainer = document.getElementById('shortcutsHtmlContainer');
+        if (shortcutsHtmlContainer) shortcutsHtmlContainer.innerHTML = TourConfig.ShortcutsHtml;
+      }
+    }
     
     // Pre-process the tour link info from the embeddedData below, placing 
     // it into arrays so it can be quickly accessed, using the location index as index.
