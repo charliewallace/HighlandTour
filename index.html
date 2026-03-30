@@ -64,115 +64,125 @@ to save these, resulting is much reduced file size.
 -->
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Tour of Helen and Bim Wallace's Highland Ave house, 1999.">
-<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0">
-<title>Highland Ave Tour</title>
-<style>
-/* Ensures the container resizes with the window */
-body, html {
-  height: 97%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
-/* Ensures the image resizes to fit its container */
-.container {
-  width: 100%;
-  height: calc(100vh - 6em);
-  //height: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: contain;
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Tour of Helen and Bim Wallace's Highland Ave house, 1999.">
+  <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0">
+  <title>Highland Ave Tour</title>
+  <style>
+    /* Ensures the container resizes with the window */
+    body,
+    html {
+      height: 97%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Ensures the image resizes to fit its container */
+    .container {
+      width: 100%;
+      height: calc(100vh - 6em);
+      //height: 100%;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: contain;
       border-radius: 5px;
       font-size: 18px;
       line-height: 1.5;
-}
+    }
 
-.td2 {
-  padding: 0;
-  border: 1px solid black;
-  height: 30px;
-  text-align:center; 
-  font-weight:bold;
-  vertical-align: top;
-}
-.td3 {
-  padding: 0;
-  border: 1px solid black;
-  height: 30px;
-  text-align: left; 
-  font-weight: bold;
-  vertical-align: top;
-  text-indent: 20px;
-  font-size: 18px; 
-}
-img {
-  position: absolute;
-}
+    .td2 {
+      padding: 0;
+      border: 1px solid black;
+      height: 30px;
+      text-align: center;
+      font-weight: bold;
+      vertical-align: top;
+    }
 
-/* Optional: Style for the table */
-table {
-  width: 100%;
-  height: 100%;
-  border-collapse: collapse;
-  table-layout:relative;
-}
+    .td3 {
+      padding: 0;
+      border: 1px solid black;
+      height: 30px;
+      text-align: left;
+      font-weight: bold;
+      vertical-align: top;
+      text-indent: 20px;
+      font-size: 18px;
+    }
 
-td {
-  padding: 0;
-  border: 1px solid black;
-  height: 50px;
-}
+    img {
+      position: absolute;
+    }
 
-/* Only rescale image1 */
-.image1 img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-}
+    /* Optional: Style for the table */
+    table {
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+      table-layout: relative;
+    }
 
-/* Ensure image2 is at left edge */
-.image2 img {
-  vertical-align: bottom;
-  line-height: 30px;
-  height: 50px;
-  width: 60px;
-  position: absolute;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-}
+    td {
+      padding: 0;
+      border: 1px solid black;
+      height: 50px;
+    }
 
-.button {
-  padding: 10px 5px;
-  background-color: #01adab;//#17b9b8; //#007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-  //margin-left: 2px;
-  width:75px;
-}
-.infoText {
-  font-size: 20px; /* Adjust the font size as needed */
-  line-height: 1.4; /* Adjust the line-height for better readability */
-  padding: 10px; /* Add some padding around the text */
-}
-.infoText:first-line {
-  font-size: 28px; /* Adjust the font size as needed */
-  font-weight: bold;
-}
+    /* Only rescale image1 */
+    .image1 img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+    }
+
+    /* Ensure image2 is at left edge */
+    .image2 img {
+      vertical-align: bottom;
+      line-height: 30px;
+      height: 50px;
+      width: 60px;
+      position: absolute;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    .button {
+      padding: 10px 5px;
+      background-color: #01adab; //#17b9b8; //#007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+      //margin-left: 2px;
+      width: 75px;
+    }
+
+    .infoText {
+      font-size: 20px;
+      /* Adjust the font size as needed */
+      line-height: 1.4;
+      /* Adjust the line-height for better readability */
+      padding: 10px;
+      /* Add some padding around the text */
+    }
+
+    .infoText:first-line {
+      font-size: 28px;
+      /* Adjust the font size as needed */
+      font-weight: bold;
+    }
 
     .shortcut-links {
       list-style-type: square;
       padding: 0;
-      padding-left:45px;
+      padding-left: 45px;
     }
 
     .shortcut-links li {
@@ -187,1171 +197,1164 @@ td {
     .shortcut-links a:hover {
       text-decoration: underline;
     }
+
     a {
       font-weight: bold;
     }
-</style>
+  </style>
 </head>
-<body bgcolor=#000000 text=#CCCCCC link=#44AAFF vlink=#44AAFF >
+
+<body bgcolor=#000000 text=#CCCCCC link=#44AAFF vlink=#44AAFF>
 
 
   <div id="infoPage" class="container" style="display:none; padding:3px;">
     <button class="button" onclick="doExit()">Home</button>
-    <div class="info-text" style="width:95%; line-height:1.2; padding-left:30px; font-size:20px;" id="infoHtmlContainer">
+    <div class="info-text" style="width:95%; line-height:1.2; padding-left:30px; font-size:20px;"
+      id="infoHtmlContainer">
     </div>
     <div id="shortcutsHtmlContainer">
     </div>
   </div>
 
 
-<table id="mainTable" border=3 cellspacing=0 cellpadding=1 >
-<!-- Row above the row containing image1 -->
-<tr>
-  <td height=10px align="left" valign="center" >
-    <button id="InfoButton" class="button" onclick="doInfo()">Info</button> 
-    <button id="HomeButton" class="button" onclick="doNav('g')">Home</button> &nbsp;
-  </td>
-  <td id="descriptionElement" height=10px align="left" valign="center" style="padding-bottom:1em;">
-  Descrip will go here 
-  </td>
-</tr>
+  <table id="mainTable" border=3 cellspacing=0 cellpadding=1>
+    <!-- Row above the row containing image1 -->
+    <tr>
+      <td height=10px align="left" valign="center">
+        <button id="InfoButton" class="button" onclick="doInfo()">Info</button>
+        <button id="HomeButton" class="button" onclick="doNav('g')">Home</button> &nbsp;
+      </td>
+      <td id="descriptionElement" height=10px align="left" valign="center" style="padding-bottom:1em;">
+        Descrip will go here
+      </td>
+    </tr>
 
-<tr>
-  <td id="HeadingCell" height=10 class="td2">
-    Dir
-  </td>
-  <td rowspan=27 align=left valign=top class="image1">
-    <!-- div style="position:fixed;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image Loading... </div -->
-    <div class="container">
-      <img id="theImage" src="P0001630.jpg">
-    </div>
-  </td>
-</tr>
-<tr id="FwdOnRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="fArrow" border=0 onclick="doNav('f')" border=0 src="arrows/arro_f.jpg">
-  </td>
-</tr>
-<tr id="FwdOffRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="f2Arrow" border=0 src="arrows/arro_f2.jpg">
-  </td>
-</tr>
-<tr id="LeftOnRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="lArrow" border=0 onclick="doNav('l')" src="arrows/arro_l.jpg">
-  </td>
-</tr>
-<tr id="LeftOffRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="l2Arrow" border=0 src="arrows/arro_l2.jpg">
-  </td>
-</tr>
-<tr id="RightOnRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="rArrow" border=0 onclick="doNav('r')" src="arrows/arro_r.jpg">
-  </td>
-</tr>
-<tr id="RightOffRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="r2Arrow" border=0 src="arrows/arro_r2.jpg">
-  </td>
-</tr>
-<tr id="UturnRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="aArrow" border=0 onclick="doNav('a')" src="arrows/arro_uturn.jpg">
-  </td>
-</tr>
-<tr id="UpRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="uArrow" border=0 onclick="doNav('u')" src="arrows/arro_u.jpg">
-  </td>
-</tr>
-<tr id="DownRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="dArrow" border=0 onclick="doNav('d')" src="arrows/arro_d.jpg">
-  </td>
-</tr>
-<tr id="ShiftLeftRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="wArrow" border=0 onclick="doNav('w')" src="arrows/arro_w.jpg">
-  </td>
-</tr>
-<tr id="ShiftRightRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="qArrow" border=0 onclick="doNav('q')" src="arrows/arro_q.jpg">
-  </td>
-</tr>
-<tr id="BackRow">
-  <td width=60 height=20 align="left" valign=center class="image2">
-    <img id="bArrow" border=0 onclick="doNav('b')" src="arrows/arro_b.jpg">
-  </td>
-</tr>
+    <tr>
+      <td id="HeadingCell" height=10 class="td2">
+        Dir
+      </td>
+      <td rowspan=27 align=left valign=top class="image1">
+        <!-- div style="position:fixed;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image Loading... </div -->
+        <div class="container">
+          <img id="theImage" src="">
+        </div>
+      </td>
+    </tr>
+    <tr id="FwdOnRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="fArrow" border=0 onclick="doNav('f')" border=0 src="arrows/arro_f.jpg">
+      </td>
+    </tr>
+    <tr id="FwdOffRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="f2Arrow" border=0 src="arrows/arro_f2.jpg">
+      </td>
+    </tr>
+    <tr id="LeftOnRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="lArrow" border=0 onclick="doNav('l')" src="arrows/arro_l.jpg">
+      </td>
+    </tr>
+    <tr id="LeftOffRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="l2Arrow" border=0 src="arrows/arro_l2.jpg">
+      </td>
+    </tr>
+    <tr id="RightOnRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="rArrow" border=0 onclick="doNav('r')" src="arrows/arro_r.jpg">
+      </td>
+    </tr>
+    <tr id="RightOffRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="r2Arrow" border=0 src="arrows/arro_r2.jpg">
+      </td>
+    </tr>
+    <tr id="UturnRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="aArrow" border=0 onclick="doNav('a')" src="arrows/arro_uturn.jpg">
+      </td>
+    </tr>
+    <tr id="UpRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="uArrow" border=0 onclick="doNav('u')" src="arrows/arro_u.jpg">
+      </td>
+    </tr>
+    <tr id="DownRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="dArrow" border=0 onclick="doNav('d')" src="arrows/arro_d.jpg">
+      </td>
+    </tr>
+    <tr id="ShiftLeftRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="wArrow" border=0 onclick="doNav('w')" src="arrows/arro_w.jpg">
+      </td>
+    </tr>
+    <tr id="ShiftRightRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="qArrow" border=0 onclick="doNav('q')" src="arrows/arro_q.jpg">
+      </td>
+    </tr>
+    <tr id="BackRow">
+      <td width=60 height=20 align="left" valign=center class="image2">
+        <img id="bArrow" border=0 onclick="doNav('b')" src="arrows/arro_b.jpg">
+      </td>
+    </tr>
 
-<!-- Buffer to make sure lines below are not covered over -->
-<tr>
-<td width=60 height=20 align="center" valign=center style="height:30px;">
-<br/>
-</td>
-</tr>
+    <!-- Buffer to make sure lines below are not covered over -->
+    <tr>
+      <td width=60 height=20 align="center" valign=center style="height:30px;">
+        <br />
+      </td>
+    </tr>
 
-<tr id="ZoomRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-    <button id="zButton" class="button" onclick="doNav('z')">Zoom</button>
-  </td>
-</tr>
-<tr id="OpenRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-      <button id="oButton" class="button" onclick="doNav('o')">Open</button>
-   </td>
-</tr>
-<tr id="CloseRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-      <button id="cButton" class="button" onclick="doNav('c')">Close</button>
-   </td>
-</tr>
-<tr id="EarlierRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-      <button id="eButton" class="button" onclick="doNav('e')">Earlier</button>
-   </td>
-</tr>
-<tr id="LaterRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-      <button id="jButton" class="button" onclick="doNav('j')">Later</button>
-   </td>
-</tr>
-<tr id="NextRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-      <button id="nButton" class="button" onclick="doNav('n')">Next</button>
-   </td>
-</tr>
-<tr id="PreviousRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-      <button id="pButton" class="button" onclick="doNav('p')">Previous</button>
-   </td>
-</tr>
-<tr id="EqualRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-      <button id="EqualButton" class="button" onclick="doZip()">Equ</button>
-   </td>
-</tr>
-<tr id="XRow">
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-      <button id="xButton" class="button" onclick="doNav('x')">Equ</button>
-   </td>
-</tr>
+    <tr id="ZoomRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="zButton" class="button" onclick="doNav('z')">Zoom</button>
+      </td>
+    </tr>
+    <tr id="OpenRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="oButton" class="button" onclick="doNav('o')">Open</button>
+      </td>
+    </tr>
+    <tr id="CloseRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="cButton" class="button" onclick="doNav('c')">Close</button>
+      </td>
+    </tr>
+    <tr id="EarlierRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="eButton" class="button" onclick="doNav('e')">Earlier</button>
+      </td>
+    </tr>
+    <tr id="LaterRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="jButton" class="button" onclick="doNav('j')">Later</button>
+      </td>
+    </tr>
+    <tr id="NextRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="nButton" class="button" onclick="doNav('n')">Next</button>
+      </td>
+    </tr>
+    <tr id="PreviousRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="pButton" class="button" onclick="doNav('p')">Previous</button>
+      </td>
+    </tr>
+    <tr id="EqualRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="EqualButton" class="button" onclick="doZip()">Equ</button>
+      </td>
+    </tr>
+    <tr id="XRow">
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="xButton" class="button" onclick="doNav('x')">Equ</button>
+      </td>
+    </tr>
 
-<tr>
-<td width=60 height=20 align="center" valign=center style="height:20px;">
-<br/>
-</td>
-</tr>
+    <tr>
+      <td width=60 height=20 align="center" valign=center style="height:20px;">
+        <br />
+      </td>
+    </tr>
 
-<tr>
-   <!-- This row has auto height. So when the browser window height changes,
+    <tr>
+      <!-- This row has auto height. So when the browser window height changes,
         this row does all the vertical stretching   -->
-   <td width=60 height=20 align="center" valign=top style="height:auto">
-   </td>
-</tr>  
+      <td width=60 height=20 align="center" valign=top style="height:auto">
+      </td>
+    </tr>
 
-<tr>
-  <!-- This row stays at the bottom of the table -->
-  <td width=60 height=20 align="center" valign=center style="height:40px;">
-     <button id="fullscreenButton" class="button" onclick="toggleFullscreen()">Expand</button>
-  </td>
-</tr>
-</table>
-
-
-<font size=3>
-  <div id="verboseDescripElem">
-  
-  </div>
-<br/>
-</font>
-
-<script src="tour_config.js"></script>
-<script src="tour_links.js"></script>
-<script>
-
-// all global vars are capitalized
-var TourConfig = window.TourConfig || {};
-var HomeIndex = TourConfig.HomeIndex || 231;
-var ImageFilePrefix = "P0001";
-var TheIndex = HomeIndex;
-var TheOldIndex = -1;
-var TheRec;
-var OldRec = TheRec;
-var TheDescrip = TourConfig.DefaultDescrip || "Wallace Tour";
-var TheVerboseDescrip = TourConfig.DefaultVerboseDescrip || "Highland Ave, Solana Beach, CA";
-var ImageName = "";
-var UserDefLinkName = "";
-var IntervalId = 0;
-var IntervalCount = 0;
-var InZipState = false;
-var SmallImagesOnly = true;
-var LargeImagesOnly = false;
+    <tr>
+      <!-- This row stays at the bottom of the table -->
+      <td width=60 height=20 align="center" valign=center style="height:40px;">
+        <button id="fullscreenButton" class="button" onclick="toggleFullscreen()">Expand</button>
+      </td>
+    </tr>
+  </table>
 
 
-//----------------------------------------------------------
-function doInfo() {
-    const theInfoElement = document.getElementById('infoPage');
-    const theMainElement = document.getElementById('mainTable');
+  <font size=3>
+    <div id="verboseDescripElem">
 
-    theInfoElement.style.display = "";       
-    theMainElement.style.display = "none";
-}
+    </div>
+    <br />
+  </font>
 
-//----------------------------------------------------------
-function doExit() {
-    const theInfoElement = document.getElementById('infoPage');
-    const theMainElement = document.getElementById('mainTable');
+  <script src="tour_config.js"></script>
+  <script src="tour_links.js"></script>
+  <script>
 
-    theInfoElement.style.display = "none";       
-    theMainElement.style.display = "";
-}
+    // all global vars are capitalized
+    var TourConfig = window.TourConfig || {};
+    var HomeIndex = TourConfig.HomeIndex || 231;
+    var ImageFilePrefix = "P0001";
+    var TheIndex = HomeIndex;
+    var TheOldIndex = -1;
+    var TheRec;
+    var OldRec = TheRec;
+    var TheDescrip = TourConfig.DefaultDescrip || "Wallace Tour";
+    var TheVerboseDescrip = TourConfig.DefaultVerboseDescrip || "Highland Ave, Solana Beach, CA";
+    var ImageName = "";
+    var UserDefLinkName = "";
+    var IntervalId = 0;
+    var IntervalCount = 0;
+    var InZipState = false;
+    var SmallImagesOnly = true;
+    var LargeImagesOnly = false;
 
 
-  
-//----------------------------------------------------------
-// Jump to the passed index
-function doJumpToIndex(destIndex) {
-  doExit();
-  if (destIndex > 0 && destIndex < 999)
-  {
-    TheIndex = destIndex;
-    TheRec = lookupData(TheIndex);  // Look up the new links record.
-    if (TheRec != null) {
-      setNavControlsVisibility();
+    //----------------------------------------------------------
+    function doInfo() {
+      const theInfoElement = document.getElementById('infoPage');
+      const theMainElement = document.getElementById('mainTable');
+
+      theInfoElement.style.display = "";
+      theMainElement.style.display = "none";
     }
-  }
-  // first, hide the old image.
-}
 
-  
-//----------------------------------------------------------
-function doNav(dirChar) {
+    //----------------------------------------------------------
+    function doExit() {
+      const theInfoElement = document.getElementById('infoPage');
+      const theMainElement = document.getElementById('mainTable');
 
-  TheOldIndex = TheIndex;
-  OldRec = TheRec;
-  if (dirChar == 'g')  // user clicked "Home"
-  {
-    TheIndex = HomeIndex;
-  }
-  TheRec = lookupData(TheIndex);
-  var theField;
-  var ii = 0;
-  var firstChar = '';
-  var link = "";
-  var linkVal = 0;
+      theInfoElement.style.display = "none";
+      theMainElement.style.display = "";
+    }
 
-  //window.alert("doNav(" + dirChar + ") = " + TheRec);
-  
-  // Search current (not new) rec to see where we need to go
-  for (ii = 0; ii < TheRec.length; ii++) {
-    theField = TheRec[ii].trim();
-    //window.alert("In doRight(), theField = " + theField);
-    firstChar = theField.charAt(0); // get first char
-    //window.alert("In doRight(), first char = " + firstChar);
-    
-    if (firstChar == dirChar) { // Check if we found the passed direction char
-      // we found the dirChar.  Now grab the rest of the field; it's the new loc index.
-      link = theField.slice(1); // Return the link
-      //window.alert("link = " + link);
-      
-      // Ususally the chars following the dirChar consist of the new link index.
-      // but we also allow a user-defined link name, in parens, if the dirChar is '=' or 'x'.
-      // ATTN: the string in the parens may contain a space, causing it to be split into
-      // multiple fields by the call to split used to create TheRec.
-      // we have to scan thru them until a closing paren is found. Here, we discard the name,
-      // all we need is the portion following the closing paren.
-      // For '=' there's a location index after the closing paren; 
-      // for 'x' there's a URL in quotes.
-      UserDefLinkName = "";
-      if (dirChar == '=' || dirChar == 'x')
+
+
+    //----------------------------------------------------------
+    // Jump to the passed index
+    function doJumpToIndex(destIndex) {
+      doExit();
+      if (destIndex > 0 && destIndex < 999) {
+        TheIndex = destIndex;
+        TheRec = lookupData(TheIndex);  // Look up the new links record.
+        if (TheRec != null) {
+          setNavControlsVisibility();
+        }
+      }
+      // first, hide the old image.
+    }
+
+
+    //----------------------------------------------------------
+    function doNav(dirChar) {
+
+      TheOldIndex = TheIndex;
+      OldRec = TheRec;
+      if (dirChar == 'g')  // user clicked "Home"
       {
-        // strip off the user defined link name.
-        // NOTE that we don't care about the user def name in parens, since
-        // we are leaving this page. All that matters is the link index.
-        var closingParenIndex = link.indexOf(")");
-        if (closingParenIndex == -1) {
-          for (var jj=ii+1; jj< TheRec.length; jj++)
-          {
-            theField = TheRec[jj].trim();
-            link = theField.slice(1); 
-            closingParenIndex = link.indexOf(")");
-            if (closingParenIndex != -1) {
-              break;
-            }
-          }
-        }
-        if (closingParenIndex != -1) {
-          // grab portion of the line following the closing paren
-          link = link.slice(closingParenIndex+1);
-          //window.alert("User def index=" + link);
-        }
-        else {
-          window.alert("Bad link syntax in user defined link. Link line = " + theField);
-        }
+        TheIndex = HomeIndex;
       }
-      // at this point, link contains the portion of the field following the closing paren.
-      
-      if (dirChar == 'x')
-      {
-        // link should contain a url in quotes.
-        link = link.slice(1, link.length-1);
-        window.open(link, "_blank");  // open in a new tab
-        
-        // after opening the new tab, we should stay in the current page of the old tab.        
-        //theImageElem.style.display = ""; // restore visibility of the image
-        return;
-      }
-      else // link should contain the destination index
-      { 
-        linkVal = parseInt(link);
-        if (linkVal > 0 && linkVal < 10000)
-        {
-          TheOldIndex = TheIndex;
-          TheIndex = linkVal;
-                    
-          if (ImagesIdx[linkVal] !== undefined) {
-            ImageName = "ImagesSmall/" + ImagesIdx[linkVal] + ".jpg";
-          }
-          else {
-            window.alert("Error for x tag: ImagesIdx[" + linkVal + "] contents undefined.");
-            ImageName = "";
-          }
-          //window.alert("image name = " + ImageName);
-         
-          break;
-        }
-        else{ 
-          // invalid link id
-          linkVal = -1;
-        }
-      }
-    } // end of for
-  }
-  
-  if (linkVal == -1){
-    window.alert("Invalid link found. link = " + link);
-  }
-  
-  if (TheIndex != TheOldIndex){ // a new index was found
-    // OK! We have a new index, now use it to get the new rec
-    TheRec = lookupData(TheIndex);  // Look up the new links record.
-    if (TheRec != null) {
-      setNavControlsVisibility();
-    }
-  }    
+      TheRec = lookupData(TheIndex);
+      var theField;
+      var ii = 0;
+      var firstChar = '';
+      var link = "";
+      var linkVal = 0;
 
-}
+      //window.alert("doNav(" + dirChar + ") = " + TheRec);
 
+      // Search current (not new) rec to see where we need to go
+      for (ii = 0; ii < TheRec.length; ii++) {
+        theField = TheRec[ii].trim();
+        //window.alert("In doRight(), theField = " + theField);
+        firstChar = theField.charAt(0); // get first char
+        //window.alert("In doRight(), first char = " + firstChar);
 
+        if (firstChar == dirChar) { // Check if we found the passed direction char
+          // we found the dirChar.  Now grab the rest of the field; it's the new loc index.
+          link = theField.slice(1); // Return the link
+          //window.alert("link = " + link);
 
-//----------------------------------------------------------
-// Set the visibility of navigation conttrols based on global links record TheRec.
-//
-function setNavControlsVisibility() {
-  
-  var quotedImageName = "";
-  var userDefinedLinkLabel = "";
-  var link = "";
-  
-  theDescripElement = document.getElementById('descriptionElement');
-  theDescripElement.innerHTML = TheDescrip;
-  
-  theVerboseDescripElem = document.getElementById('verboseDescripElem');
-  theVerboseDescripElem.innerHTML = TheIndex.toString() + ":&nbsp;" + TheVerboseDescrip;
-
-  var foundDblQuote = false;
-  var foundH = false;
-  var theHeading = "";
-  var foundR = false;
-  var foundL = false;
-  var foundF = false;
-  var foundB = false;
-  var foundA = false;
-  var foundO = false;
-  var foundC = false;  
-  var foundU = false;
-  var foundD = false;
-  var foundW = false;   
-  var foundQ = false;
-  var foundZ = false;      
-  var foundE = false;
-  var foundJ = false;       
-  var foundN = false;
-  var foundP = false;  
-  var foundEqual = false;
-  var foundX = false;
-  var openingParenIndex = -1;
-  var closingParenIndex = -1;
-  var ii, jj;
-  
-  
- 
-  if (TheRec != null) {
-    // Search the new rec to see which nav controls should be displayed
-    for (ii = 0; ii < TheRec.length; ii++) {
-      theField = TheRec[ii].trim();
-      firstChar = theField.charAt(0); // get first char
-      
-      switch(firstChar)
-      {
-      case '\"': // opening dbl quote of optional imageName
-        foundDblQuote = true;
-        quotedImageName = theField.slice(1, theField.length-1) + ".jpg"; // remove the quotes
-        //window.alert("quoted filename = " + quotedImageName);
-        break;
-        
-      case '=': // user defined button, format (label)NNN 
-        foundEqual = true;
-        // TODO: need to extract the user defined link name from the parens, and apply it to button.
-        // NOTE that the link name may contain spaces, so could span multiple fields.
-        // We don't care about the index following the closing paren, that won't matter until
-        // the button is clicked.
-        
-        link = theField.slice(1); // trim off the '='
-        openingParenIndex = link.indexOf("(");
-        if (openingParenIndex == -1) {
-          window.alert("Bad user-defined link syntax, no open paren for index=" + TheIndex);
-          break;
-        }
-        
-        closingParenIndex = link.indexOf(")");
-        if (closingParenIndex == -1) // scanning across multiple fields is needed
-        {
-          userDefinedLinkLabel = link.slice(openingParenIndex+1);
-          //window.alert("UserDef link label part 1 = " + userDefinedLinkLabel);
-          for (jj=ii+1; jj< TheRec.length; jj++)
-          {
-            link = TheRec[jj].trim();
-            closingParenIndex = link.indexOf(")");
-            if (closingParenIndex != -1) // this is the last field
-            { 
-              userDefinedLinkLabel += " " + link.slice(0, closingParenIndex);
-              break;
-            }
-            else{
-              userDefinedLinkLabel += link;
-            }
-          }
-          //window.alert("UserDef link multi part = " + userDefinedLinkLabel);
-        }
-        else // open and close parens are in the same field
-        {
-          userDefinedLinkLabel = link.slice(openingParenIndex+1, closingParenIndex);          
-          //window.alert("UserDef link label one piece = " + userDefinedLinkLabel);
-        }
-        //--------
-        break;
-        
-      case 'x': // user defined external url button, format (label)"url.htm"
-        foundX = true;
-        // TODO: need to extract the user defined url name from the parens, and apply it to button.
-        // NOTE that the link name may contain spaces, so could span multiple fields.
-        // We don't care about the url following the closing paren, that won't matter until
-        // the button is clicked.
-        
-        link = theField.slice(1); // trim off the 'x'
-        openingParenIndex = link.indexOf("(");
-        if (openingParenIndex == -1) {
-          window.alert("Bad user-defined URL syntax, no open paren for index=" + TheIndex);
-          break;
-        }
-        
-        closingParenIndex = link.indexOf(")");
-        if (closingParenIndex == -1) // scanning across multiple fields is needed
-        {
-          userDefinedLinkLabel = link.slice(openingParenIndex+1);
-          //window.alert("UserDef link label part 1 = " + userDefinedLinkLabel);
-          for (jj=ii+1; jj< TheRec.length; jj++)
-          {
-            link = TheRec[jj].trim();
-            closingParenIndex = link.indexOf(")");
-            if (closingParenIndex != -1) // this is the last field
-            { 
-              userDefinedLinkLabel += " " + link.slice(0, closingParenIndex);
-              break;
-            }
-            else{
-              userDefinedLinkLabel += link;
-            }
-          }
-          //window.alert("UserDef link multi part = " + userDefinedLinkLabel);
-        }
-        else // open and close parens are in the same field
-        {
-          userDefinedLinkLabel = link.slice(openingParenIndex+1, closingParenIndex);          
-          //window.alert("UserDef link label one piece = " + userDefinedLinkLabel);
-        }
-        //--------
-        break;
-        
-        
-      case 'h': // heading
-        foundH = true;
-        // grab the heading - remove the first char
-        theHeading = theField.slice(1).toUpperCase();
-        break;
-      case 'r': // turn right
-        foundR = true;
-        break;
-      case 'l': // turn left
-        foundL = true;
-        break;
-      case 'f': // fwd
-        foundF = true;
-        break;
-      case 'b': // back (esc)
-        foundB = true;
-        break;
-      case 'a':  // turn around
-        foundA = true;
-        break;
-      case 'o': // open
-        foundO = true;
-        break;
-      case 'c': // close
-        foundC = true;
-        break;
-      case 'u': // up
-        foundU = true;
-        break;
-      case 'd': // down
-        foundD = true;
-        break;
-      case 'w': // shift left 
-        foundW = true;
-        break;
-      case 'q': // shift right
-        foundQ = true;
-        break;
-      case 'z': // zoom in
-        foundZ = true;
-        break;
-      case 'e': // earlier
-        foundE = true;
-        break;
-      case 'j': // later
-        foundJ = true;
-        break;
-      case 'n': // next in a sequence
-        foundN = true;
-        break;
-      case 'p': // prev in a sequence
-        foundP = true;
-        break;
-      default:
-        break;
-      }  
-    }
-    
-    // load the main image file
-    const theImage = document.getElementById('theImage'); 
-    
-    if (ImagesIdx[TheIndex] !== undefined) {
-      
-      ImageName = ImagesIdx[TheIndex] + ".jpg";
-      
-      if (!LargeImagesOnly) {
-        // Initially get the small version of the image file.  below in the onload(), once the small
-        //   version has loaded, we will load the full size version.
-        ImageName = "ImagesSmall/" + ImageName;
-      }
-      //window.alert("Loading " + ImageName);
-      theImage.src = ImageName;
-    }
-    else {
-      window.alert("Error: ImagesIdx[" + TheIndex + "] contents undefined.");
-      ImageName = "";
-    }
-    
-    
-    //---------------------------------------------------
-    // Delay display of the image until it is loaded. 
-    // While the image is not yet shown, the user sees "Image Loading..." in the
-    //  div below the image. Better than showing the old image when loading is slow.
-    theImage.onload = function() {
-
-      if (!SmallImagesOnly && !LargeImagesOnly) {
-        if (ImageName.indexOf("ImagesSmall/") != -1) {
-          // We just finished loading the small version of a file, now load the full size version
-          // We skip this when in the "zip" state for better performance.
-          if (!InZipState) {
-            ImageName = ImagesIdx[TheIndex] + ".jpg";
-            //window.alert("Last step, loading fullsize. ImageName=" + ImageName);
-          
-            theImage.src = ImageName;        
-          }
-        }
-      }
-    }
-    //-------------------------------------------------------
-    
-    
-    // Now that we searched the entire new link line record, we know
-    // which nav controls need to be displayed.
-    var theOnElement;
-    var theOffElement;
-    var theElement;
-
-    theElement = document.getElementById('HeadingCell'); // same row as main image
-    if (foundH){
-       if (theHeading != "") {
-         theElement.innerHTML = theHeading;
-         //theElement.textContent = theHeading;
-       }
-       theElement.style.display = "";
-    }
-    else{
-       theElement.innerHTML = "";
-    }       
-   
-     
-    theOnElement = document.getElementById('RightOnRow');
-    theOffElement = document.getElementById('RightOffRow');
-    if (foundR){
-       //console.log(theOnElement.style.display);
-       theOnElement.style.display = "";       
-       //console.log(theOnElement.style.display);
-       theOffElement.style.display = "none";
-    }
-    else{
-       theOnElement.style.display = "none";
-       theOffElement.style.display = "";
-    }    
-    
-    theOnElement = document.getElementById('LeftOnRow');
-    theOffElement = document.getElementById('LeftOffRow');
-    if (foundL){
-       theOnElement.style.display = "";
-       theOffElement.style.display = "none";
-    }
-    else{
-       theOnElement.style.display = "none";
-       theOffElement.style.display = "";
-    }    
-    
-    theOnElement = document.getElementById('FwdOnRow');
-    theOffElement = document.getElementById('FwdOffRow');
-    if (foundF){
-       theOnElement.style.display = "";
-       theOffElement.style.display = "none";
-    }
-    else{
-       theOnElement.style.display = "none";
-       theOffElement.style.display = "";
-    }
-
-    theElement = document.getElementById('UturnRow'); // turn around
-    if (foundA){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }   
-    
-    theElement = document.getElementById('BackRow'); // go back (esc)
-    if (foundB){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }   
-    
-    theElement = document.getElementById('UpRow'); // go up
-    if (foundU){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }   
-    
-    theElement = document.getElementById('DownRow'); // go down
-    if (foundD){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }   
-    
-    theElement = document.getElementById('ZoomRow');
-    if (foundZ){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }  
-    
-    theElement = document.getElementById('EarlierRow');
-    if (foundE){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }  
-    
-    theElement = document.getElementById('LaterRow');
-    if (foundJ){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }
-        
-    theElement = document.getElementById('OpenRow');
-    if (foundO){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }
-    
-    theElement = document.getElementById('CloseRow');
-    if (foundC){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }
-    
-    theElement = document.getElementById('ShiftLeftRow');
-    if (foundW){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }
-    
-    theElement = document.getElementById('ShiftRightRow');
-    if (foundQ){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }
-    
-    theElement = document.getElementById('NextRow');
-    if (foundN){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }
-    
-    theElement = document.getElementById('PreviousRow');
-    if (foundP){
-       theElement.style.display = "";
-    }
-    else{
-       theElement.style.display = "none";
-    }
-    
-    theElement = document.getElementById('EqualRow');
-    if (foundEqual){
-       theElement.style.display = "";
-       var button = document.getElementById("EqualButton");
-       button.innerHTML = userDefinedLinkLabel;
-    }
-    else{
-       theElement.style.display = "none";
-    }  
-    
-    theElement = document.getElementById('XRow');
-    if (foundX){
-       theElement.style.display = "";
-       var button = document.getElementById("xButton");
-       button.innerHTML = userDefinedLinkLabel;
-    }
-    else{
-       theElement.style.display = "none";
-    }  
-    
-    // hide the home button when on the home page
-    theElement = document.getElementById('HomeButton');
-    var infoElement = document.getElementById('InfoButton');
-    if (TheIndex == HomeIndex){
-       theElement.style.display = "none";
-       infoElement.style.display = "";
-    }
-    else{
-       if (!InZipState) {
-          theElement.style.display = "";
-       }
-       infoElement.style.display = "none";
-    }
-    
-
-  }
-  else{
-    window.alert("New link line not found, index = " + locationIndex);
-  }
-}
-
-  
-function doZip() {
-  //window.alert("call setInterval");
-  
-  InZipState = true;
-  IntervalCount = 0;
-  IntervalId = -1;
-  console.log("doZip() TheIndex=" + TheIndex);
-  var zipMacro = null;
-  if (typeof TourConfig !== 'undefined' && TourConfig.ZipMacros) {
-    zipMacro = TourConfig.ZipMacros[TheIndex];
-  }
-  
-  if (zipMacro) {
-    document.getElementById('HomeButton').style.display = "none";
-    IntervalId = setInterval(doZipEvent, 800, TheIndex, zipMacro);
-  } else {
-    InZipState = false;
-    doNav('=');
-  }
-  
-  if (InZipState) {
-    // hide controls so they can't be clicked during the zip.
-    document.getElementById('fArrow').style.display = "none";
-    document.getElementById('f2Arrow').style.display = "none";
-    document.getElementById('lArrow').style.display = "none";
-    document.getElementById('l2Arrow').style.display = "none";
-    document.getElementById('rArrow').style.display = "none";
-    document.getElementById('r2Arrow').style.display = "none";
-    document.getElementById('aArrow').style.display = "none";
-    document.getElementById('uArrow').style.display = "none";
-    document.getElementById('dArrow').style.display = "none";
-    document.getElementById('wArrow').style.display = "none";
-    document.getElementById('qArrow').style.display = "none";
-    document.getElementById('bArrow').style.display = "none";
-    
-    document.getElementById('zButton').style.display = "none";
-    document.getElementById('oButton').style.display = "none";
-    document.getElementById('cButton').style.display = "none";
-    document.getElementById('eButton').style.display = "none";
-    document.getElementById('jButton').style.display = "none";
-    document.getElementById('nButton').style.display = "none";
-    document.getElementById('pButton').style.display = "none";
-    document.getElementById('equalButton').style.display = "none";
-    document.getElementById('xButton').style.display = "none";
-  }
-
-}
-
-function doZipEvent(idx, dirSeq)
-{
-  IntervalCount++;
-  var dirChar = dirSeq[IntervalCount-1];
-  doNav(dirChar);
-  
-  var lastDirIdx = dirSeq.length-1;
-  if (IntervalCount-1 >= lastDirIdx || IntervalCount > 99) {
-    clearInterval(IntervalId); // Stop the setInterval from firing again
-    
-    document.getElementById('HomeButton').style.display = "";
-    InZipState = false;
-    
-    // restore visibility of controls so they can be clicked.
-    document.getElementById('fArrow').style.display = "";
-    document.getElementById('f2Arrow').style.display = "";
-    document.getElementById('lArrow').style.display = "";
-    document.getElementById('l2Arrow').style.display = "";
-    document.getElementById('rArrow').style.display = "";
-    document.getElementById('r2Arrow').style.display = "";
-    document.getElementById('aArrow').style.display = "";
-    document.getElementById('uArrow').style.display = "";
-    document.getElementById('dArrow').style.display = "";
-    document.getElementById('wArrow').style.display = "";
-    document.getElementById('qArrow').style.display = "";
-    document.getElementById('bArrow').style.display = "";
-    
-    document.getElementById('zButton').style.display = "";
-    document.getElementById('oButton').style.display = "";
-    document.getElementById('cButton').style.display = "";
-    document.getElementById('eButton').style.display = "";
-    document.getElementById('jButton').style.display = "";
-    document.getElementById('nButton').style.display = "";
-    document.getElementById('pButton').style.display = "";
-    document.getElementById('equalButton').style.display = "";
-    document.getElementById('xButton').style.display = "";
-  }  
-
-}
-
-//-------------------------------------------------------
-// Lookup arrays used for quick access to tour data.
-// NOTE: Sparse array usage. If uninit member accessed, returns "undefined"
-const IdxLen = 1000;
-const LinksIdx = new Array(IdxLen);
-const DescIdx = new Array(IdxLen);
-const VerboseIdx = new Array(IdxLen);
-const ImagesIdx = new Array(IdxLen);
-
-
-//============================================================================================
-function buildLookupIndex() {
-  const start = performance.now();
-  var index = -1;
-  var field = "";
-  var firstSpaceIdx = -1;
-  var firstChar = '';
-  var theLine = "";
-  var descrLine = "";
-  var verboseDesc = "";
-  var imageFilename = "";
-
-  var lines = embeddedData.split("\n"); // Split data into lines
-  for (var ii = 0; ii < lines.length; ii++) { //10; ii++) { //
-      theLine = lines[ii].trim();
-      var parts = theLine.split(" "); // Split each line into fields
-
-      //console.log("In buildLookupIndex(), theLine = " + theLine);
-      firstChar = theLine[0];
-      if (firstChar >= '0' && firstChar <= '9') {
-        // the line starts with a digit, treat it as a link line
-        
-        firstSpaceIdx = theLine.indexOf(" ");      
-        //field = theLine.slice(0, firstSpaceIdx);
-        field = parts[0];
-        //console.log("Extracted index as string = >" + field + "<");
-        index = parseInt(field);
-        //console.log("Index as int = " + index);
-        
-        if (index >=0 && index < 1000) {
-        
-          // TODO check if this index is already used; if so show warning but proceed 
-          if (LinksIdx[index] !== undefined) { 
-            window.alert("Warning - line " + ii + ": LinksIdx[" + index + "] already used, contains " + LinksIdx[index]);
-          }
-          
-          // save the link line (not including the first field) into the LinksIdx based on the extracted index.  
-          //  This enables sparse-array lookup for speed.
-          LinksIdx[index] = theLine.slice(firstSpaceIdx+1);
-          //console.log("LinksIdx[" + index + "] = >" + LinksIdx[index] + "<");
-
-          //------------ now determine the image filename for this link line.
-          
-          // Create default image filename based on the index; this can be superceded 
-          //  if the destination link line includes a quoted string = image name but without the .jpg
-          ImagesIdx[index] = ImageFilePrefix + field;  // don't include the .jpg, will add later.
-          
-          // Check if a quoted filename is provided; if so, it supercedes the index-based name.
-          // Must be the second field of the link line. May include folder name.
-          field = parts[1].trim();
-          
-          firstChar = field.charAt(0); // get first char
-      
-          if (firstChar == '\"') { // opening dbl quote of optional imageName
-            if (field.charAt(field.length-1) != '\"') {
-              window.alert("Warning - bad link like syntax for index = " + index + ". Closing dbl quote missing.");
-            }
-            
-            // SUPERCEDE the index-based filename
-            ImagesIdx[index] = field.slice(1, field.length-1) // remove the quotes
-          }
-          
-          // check the next line; if starts with non-numeric char treat as Optional description
-          if (ii < lines.length-1) {
-            descrLine = lines[ii+1].trim();            
-            firstChar = descrLine[0];
-            if ((firstChar >= '0' && firstChar <= '9') || firstChar == '#') {
-              DescIdx[index] = "";
-              continue;  // no descrip found; no need to check for verbose descrip
-            }
-            else {
-              DescIdx[index] = descrLine;
-            }
-            ii += 1;  // <<<<<<<<<< s line in lines[]
-          
-            // scan for lines starting with non-digit, treat as verbose descrip 
-            verboseDesc = "";
-            if (ii < lines.length-1) {     
-              //console.log("extract verbose text. ii=" + ii);
-              for (var jj=ii+1; jj< lines.length; jj++) {
-                var nextLine = lines[jj].trim();
-                //console.log(nextLine);
-                var firstChar = nextLine[0];
-                if ((firstChar >= '0' && firstChar <= '9') || firstChar == '#') {
+          // Ususally the chars following the dirChar consist of the new link index.
+          // but we also allow a user-defined link name, in parens, if the dirChar is '=' or 'x'.
+          // ATTN: the string in the parens may contain a space, causing it to be split into
+          // multiple fields by the call to split used to create TheRec.
+          // we have to scan thru them until a closing paren is found. Here, we discard the name,
+          // all we need is the portion following the closing paren.
+          // For '=' there's a location index after the closing paren; 
+          // for 'x' there's a URL in quotes.
+          UserDefLinkName = "";
+          if (dirChar == '=' || dirChar == 'x') {
+            // strip off the user defined link name.
+            // NOTE that we don't care about the user def name in parens, since
+            // we are leaving this page. All that matters is the link index.
+            var closingParenIndex = link.indexOf(")");
+            if (closingParenIndex == -1) {
+              for (var jj = ii + 1; jj < TheRec.length; jj++) {
+                theField = TheRec[jj].trim();
+                link = theField.slice(1);
+                closingParenIndex = link.indexOf(")");
+                if (closingParenIndex != -1) {
                   break;
                 }
-                verboseDesc += nextLine;
-                ii += 1; // <<<<<<<<<< advance to next line in lines[]
               }
             }
-            //console.log("Verbose = >" + verboseDesc + "<");
-            
-            VerboseIdx[index] = verboseDesc;
+            if (closingParenIndex != -1) {
+              // grab portion of the line following the closing paren
+              link = link.slice(closingParenIndex + 1);
+              //window.alert("User def index=" + link);
+            }
+            else {
+              window.alert("Bad link syntax in user defined link. Link line = " + theField);
+            }
           }
-        }  
-        else {
-          window.alert("Illegal link in buildLookupIndex() = " + index);
+          // at this point, link contains the portion of the field following the closing paren.
+
+          if (dirChar == 'x') {
+            // link should contain a url in quotes.
+            link = link.slice(1, link.length - 1);
+            window.open(link, "_blank");  // open in a new tab
+
+            // after opening the new tab, we should stay in the current page of the old tab.        
+            //theImageElem.style.display = ""; // restore visibility of the image
+            return;
+          }
+          else // link should contain the destination index
+          {
+            linkVal = parseInt(link);
+            if (linkVal > 0 && linkVal < 10000) {
+              TheOldIndex = TheIndex;
+              TheIndex = linkVal;
+
+              if (ImagesIdx[linkVal] !== undefined) {
+                ImageName = "ImagesSmall/" + ImagesIdx[linkVal] + ".jpg";
+              }
+              else {
+                window.alert("Error for x tag: ImagesIdx[" + linkVal + "] contents undefined.");
+                ImageName = "";
+              }
+              //window.alert("image name = " + ImageName);
+
+              break;
+            }
+            else {
+              // invalid link id
+              linkVal = -1;
+            }
+          }
+        } // end of for
+      }
+
+      if (linkVal == -1) {
+        window.alert("Invalid link found. link = " + link);
+      }
+
+      if (TheIndex != TheOldIndex) { // a new index was found
+        // OK! We have a new index, now use it to get the new rec
+        TheRec = lookupData(TheIndex);  // Look up the new links record.
+        if (TheRec != null) {
+          setNavControlsVisibility();
         }
       }
-      if (index==-1){
-        continue;  // should only happen when the first line of embeddedData starts with non numeric
+
+    }
+
+
+
+    //----------------------------------------------------------
+    // Set the visibility of navigation conttrols based on global links record TheRec.
+    //
+    function setNavControlsVisibility() {
+
+      var quotedImageName = "";
+      var userDefinedLinkLabel = "";
+      var link = "";
+
+      theDescripElement = document.getElementById('descriptionElement');
+      theDescripElement.innerHTML = TheDescrip;
+
+      theVerboseDescripElem = document.getElementById('verboseDescripElem');
+      theVerboseDescripElem.innerHTML = TheIndex.toString() + ":&nbsp;" + TheVerboseDescrip;
+
+      var foundDblQuote = false;
+      var foundH = false;
+      var theHeading = "";
+      var foundR = false;
+      var foundL = false;
+      var foundF = false;
+      var foundB = false;
+      var foundA = false;
+      var foundO = false;
+      var foundC = false;
+      var foundU = false;
+      var foundD = false;
+      var foundW = false;
+      var foundQ = false;
+      var foundZ = false;
+      var foundE = false;
+      var foundJ = false;
+      var foundN = false;
+      var foundP = false;
+      var foundEqual = false;
+      var foundX = false;
+      var openingParenIndex = -1;
+      var closingParenIndex = -1;
+      var ii, jj;
+
+
+
+      if (TheRec != null) {
+        // Search the new rec to see which nav controls should be displayed
+        for (ii = 0; ii < TheRec.length; ii++) {
+          theField = TheRec[ii].trim();
+          firstChar = theField.charAt(0); // get first char
+
+          switch (firstChar) {
+            case '\"': // opening dbl quote of optional imageName
+              foundDblQuote = true;
+              quotedImageName = theField.slice(1, theField.length - 1) + ".jpg"; // remove the quotes
+              //window.alert("quoted filename = " + quotedImageName);
+              break;
+
+            case '=': // user defined button, format (label)NNN 
+              foundEqual = true;
+              // TODO: need to extract the user defined link name from the parens, and apply it to button.
+              // NOTE that the link name may contain spaces, so could span multiple fields.
+              // We don't care about the index following the closing paren, that won't matter until
+              // the button is clicked.
+
+              link = theField.slice(1); // trim off the '='
+              openingParenIndex = link.indexOf("(");
+              if (openingParenIndex == -1) {
+                window.alert("Bad user-defined link syntax, no open paren for index=" + TheIndex);
+                break;
+              }
+
+              closingParenIndex = link.indexOf(")");
+              if (closingParenIndex == -1) // scanning across multiple fields is needed
+              {
+                userDefinedLinkLabel = link.slice(openingParenIndex + 1);
+                //window.alert("UserDef link label part 1 = " + userDefinedLinkLabel);
+                for (jj = ii + 1; jj < TheRec.length; jj++) {
+                  link = TheRec[jj].trim();
+                  closingParenIndex = link.indexOf(")");
+                  if (closingParenIndex != -1) // this is the last field
+                  {
+                    userDefinedLinkLabel += " " + link.slice(0, closingParenIndex);
+                    break;
+                  }
+                  else {
+                    userDefinedLinkLabel += link;
+                  }
+                }
+                //window.alert("UserDef link multi part = " + userDefinedLinkLabel);
+              }
+              else // open and close parens are in the same field
+              {
+                userDefinedLinkLabel = link.slice(openingParenIndex + 1, closingParenIndex);
+                //window.alert("UserDef link label one piece = " + userDefinedLinkLabel);
+              }
+              //--------
+              break;
+
+            case 'x': // user defined external url button, format (label)"url.htm"
+              foundX = true;
+              // TODO: need to extract the user defined url name from the parens, and apply it to button.
+              // NOTE that the link name may contain spaces, so could span multiple fields.
+              // We don't care about the url following the closing paren, that won't matter until
+              // the button is clicked.
+
+              link = theField.slice(1); // trim off the 'x'
+              openingParenIndex = link.indexOf("(");
+              if (openingParenIndex == -1) {
+                window.alert("Bad user-defined URL syntax, no open paren for index=" + TheIndex);
+                break;
+              }
+
+              closingParenIndex = link.indexOf(")");
+              if (closingParenIndex == -1) // scanning across multiple fields is needed
+              {
+                userDefinedLinkLabel = link.slice(openingParenIndex + 1);
+                //window.alert("UserDef link label part 1 = " + userDefinedLinkLabel);
+                for (jj = ii + 1; jj < TheRec.length; jj++) {
+                  link = TheRec[jj].trim();
+                  closingParenIndex = link.indexOf(")");
+                  if (closingParenIndex != -1) // this is the last field
+                  {
+                    userDefinedLinkLabel += " " + link.slice(0, closingParenIndex);
+                    break;
+                  }
+                  else {
+                    userDefinedLinkLabel += link;
+                  }
+                }
+                //window.alert("UserDef link multi part = " + userDefinedLinkLabel);
+              }
+              else // open and close parens are in the same field
+              {
+                userDefinedLinkLabel = link.slice(openingParenIndex + 1, closingParenIndex);
+                //window.alert("UserDef link label one piece = " + userDefinedLinkLabel);
+              }
+              //--------
+              break;
+
+
+            case 'h': // heading
+              foundH = true;
+              // grab the heading - remove the first char
+              theHeading = theField.slice(1).toUpperCase();
+              break;
+            case 'r': // turn right
+              foundR = true;
+              break;
+            case 'l': // turn left
+              foundL = true;
+              break;
+            case 'f': // fwd
+              foundF = true;
+              break;
+            case 'b': // back (esc)
+              foundB = true;
+              break;
+            case 'a':  // turn around
+              foundA = true;
+              break;
+            case 'o': // open
+              foundO = true;
+              break;
+            case 'c': // close
+              foundC = true;
+              break;
+            case 'u': // up
+              foundU = true;
+              break;
+            case 'd': // down
+              foundD = true;
+              break;
+            case 'w': // shift left 
+              foundW = true;
+              break;
+            case 'q': // shift right
+              foundQ = true;
+              break;
+            case 'z': // zoom in
+              foundZ = true;
+              break;
+            case 'e': // earlier
+              foundE = true;
+              break;
+            case 'j': // later
+              foundJ = true;
+              break;
+            case 'n': // next in a sequence
+              foundN = true;
+              break;
+            case 'p': // prev in a sequence
+              foundP = true;
+              break;
+            default:
+              break;
+          }
+        }
+
+        // load the main image file
+        const theImage = document.getElementById('theImage');
+
+        if (ImagesIdx[TheIndex] !== undefined) {
+
+          ImageName = ImagesIdx[TheIndex] + ".jpg";
+
+          if (!LargeImagesOnly) {
+            // Initially get the small version of the image file.  below in the onload(), once the small
+            //   version has loaded, we will load the full size version.
+            ImageName = "ImagesSmall/" + ImageName;
+          }
+          //window.alert("Loading " + ImageName);
+          theImage.src = ImageName;
+        }
+        else {
+          window.alert("Error: ImagesIdx[" + TheIndex + "] contents undefined.");
+          ImageName = "";
+        }
+
+
+        //---------------------------------------------------
+        // Delay display of the image until it is loaded. 
+        // While the image is not yet shown, the user sees "Image Loading..." in the
+        //  div below the image. Better than showing the old image when loading is slow.
+        theImage.onload = function () {
+
+          if (!SmallImagesOnly && !LargeImagesOnly) {
+            if (ImageName.indexOf("ImagesSmall/") != -1) {
+              // We just finished loading the small version of a file, now load the full size version
+              // We skip this when in the "zip" state for better performance.
+              if (!InZipState) {
+                ImageName = ImagesIdx[TheIndex] + ".jpg";
+                //window.alert("Last step, loading fullsize. ImageName=" + ImageName);
+
+                theImage.src = ImageName;
+              }
+            }
+          }
+        }
+        //-------------------------------------------------------
+
+
+        // Now that we searched the entire new link line record, we know
+        // which nav controls need to be displayed.
+        var theOnElement;
+        var theOffElement;
+        var theElement;
+
+        theElement = document.getElementById('HeadingCell'); // same row as main image
+        if (foundH) {
+          if (theHeading != "") {
+            theElement.innerHTML = theHeading;
+            //theElement.textContent = theHeading;
+          }
+          theElement.style.display = "";
+        }
+        else {
+          theElement.innerHTML = "";
+        }
+
+
+        theOnElement = document.getElementById('RightOnRow');
+        theOffElement = document.getElementById('RightOffRow');
+        if (foundR) {
+          //console.log(theOnElement.style.display);
+          theOnElement.style.display = "";
+          //console.log(theOnElement.style.display);
+          theOffElement.style.display = "none";
+        }
+        else {
+          theOnElement.style.display = "none";
+          theOffElement.style.display = "";
+        }
+
+        theOnElement = document.getElementById('LeftOnRow');
+        theOffElement = document.getElementById('LeftOffRow');
+        if (foundL) {
+          theOnElement.style.display = "";
+          theOffElement.style.display = "none";
+        }
+        else {
+          theOnElement.style.display = "none";
+          theOffElement.style.display = "";
+        }
+
+        theOnElement = document.getElementById('FwdOnRow');
+        theOffElement = document.getElementById('FwdOffRow');
+        if (foundF) {
+          theOnElement.style.display = "";
+          theOffElement.style.display = "none";
+        }
+        else {
+          theOnElement.style.display = "none";
+          theOffElement.style.display = "";
+        }
+
+        theElement = document.getElementById('UturnRow'); // turn around
+        if (foundA) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('BackRow'); // go back (esc)
+        if (foundB) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('UpRow'); // go up
+        if (foundU) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('DownRow'); // go down
+        if (foundD) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('ZoomRow');
+        if (foundZ) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('EarlierRow');
+        if (foundE) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('LaterRow');
+        if (foundJ) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('OpenRow');
+        if (foundO) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('CloseRow');
+        if (foundC) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('ShiftLeftRow');
+        if (foundW) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('ShiftRightRow');
+        if (foundQ) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('NextRow');
+        if (foundN) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('PreviousRow');
+        if (foundP) {
+          theElement.style.display = "";
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('EqualRow');
+        if (foundEqual) {
+          theElement.style.display = "";
+          var button = document.getElementById("EqualButton");
+          button.innerHTML = userDefinedLinkLabel;
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        theElement = document.getElementById('XRow');
+        if (foundX) {
+          theElement.style.display = "";
+          var button = document.getElementById("xButton");
+          button.innerHTML = userDefinedLinkLabel;
+        }
+        else {
+          theElement.style.display = "none";
+        }
+
+        // hide the home button when on the home page
+        theElement = document.getElementById('HomeButton');
+        var infoElement = document.getElementById('InfoButton');
+        if (TheIndex == HomeIndex) {
+          theElement.style.display = "none";
+          infoElement.style.display = "";
+        }
+        else {
+          if (!InZipState) {
+            theElement.style.display = "";
+          }
+          infoElement.style.display = "none";
+        }
+
+
       }
-  }
-  
-  //console.log("Test of uninit array access. DescIdx[200] = >" + DescIdx[200] + "<");
-
-  const end = performance.now();
-  //console.log(`Execution time: ${end - start} ms`);
-  return (end-start);
-}
-
-
-
-//------------------------------------------
-// Function to lookup data by index 
-// Fetches the string of link info saved for the passed index,
-// splits it up into an array of fields, and returns the array.
-function lookupData(index) {
-
-  if (index < 0 || index > IdxLen-1)
-  {
-    window.alert("in lookupData(), illegal index received = " + index);
-    return null;
-  }
-
-  var theLine = LinksIdx[index];
-  if (theLine === undefined) {
-    return null;
-  }
-  
-  var parts = theLine.split(" "); // Split each line into fields
-  
-  TheDescrip = DescIdx[index];
-  if (TheDescrip === undefined) {
-    TheDescrip = "";
-  }
-    
-  TheVerboseDescrip = VerboseIdx[index];
-  if (TheVerboseDescrip === undefined) {
-    TheVerboseDescrip = "";
-  }
-  
-  return parts;
-    
-}
-            
-            
-//----------------------------------------------------------
-// On page load, look up the link line for the default starting index and
-//  set up the page appropriately
-document.addEventListener("DOMContentLoaded", function() {   
-  
-    if (typeof TourConfig !== 'undefined') {
-      if (TourConfig.PageTitle) document.title = TourConfig.PageTitle;
-      if (TourConfig.MetaDescription) {
-        var metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) metaDesc.content = TourConfig.MetaDescription;
-      }
-      if (TourConfig.InfoHtml) {
-        var infoHtmlContainer = document.getElementById('infoHtmlContainer');
-        if (infoHtmlContainer) infoHtmlContainer.innerHTML = TourConfig.InfoHtml;
-      }
-      if (TourConfig.ShortcutsHtml) {
-        var shortcutsHtmlContainer = document.getElementById('shortcutsHtmlContainer');
-        if (shortcutsHtmlContainer) shortcutsHtmlContainer.innerHTML = TourConfig.ShortcutsHtml;
+      else {
+        window.alert("New link line not found, index = " + locationIndex);
       }
     }
-    
-    // Pre-process the tour link info from the embeddedData below, placing 
-    // it into arrays so it can be quickly accessed, using the location index as index.
-    var processTimeMs = buildLookupIndex();    
-    //window.alert("Lookup build time = " + processTimeMs + " ms");
-    
-    // Init state of the starting location in the tour
-    TheRec = lookupData(TheIndex);
-    setNavControlsVisibility();
-    
-    document.addEventListener("keydown", function(event) {
-        if (event.keyCode === 37) {
-            // Left arrow was pressed
-            doNav('l');
-        } else if (event.keyCode === 38) {
-            // Up arrow was pressed
-            doNav('f');
-        } else if (event.keyCode === 39) {
-            // Right arrow was pressed
-            doNav('r');
-        } else if (event.keyCode === 40) {
-            // Down arrow was pressed
-            doNav('b');
-        } else if (event.keyCode === 79) {
-            // o key pressed
-            doNav('o');
-        } else if (event.key === 'c') {
-            // o key pressed
-            doNav('c');
-        } else if (event.key === 'e') {
-            // o key pressed
-            doNav('e');
-        } else if (event.key === 'l') {
-            // o key pressed
-            doNav('j');
-        } else if (event.key === 'z') {
-            // o key pressed
-            doNav('z');
-        } else if (event.key === 'h') {
-            // o key pressed
-            doNav('g');
-        } else if (event.key === 'n') {
-            // o key pressed
-            doNav('n');
-        } else if (event.key === 'p') {
-            // o key pressed
-            doNav('p');
+
+
+    function doZip() {
+      //window.alert("call setInterval");
+
+      InZipState = true;
+      IntervalCount = 0;
+      IntervalId = -1;
+      console.log("doZip() TheIndex=" + TheIndex);
+      var zipMacro = null;
+      if (typeof TourConfig !== 'undefined' && TourConfig.ZipMacros) {
+        zipMacro = TourConfig.ZipMacros[TheIndex];
+      }
+
+      if (zipMacro) {
+        document.getElementById('HomeButton').style.display = "none";
+        IntervalId = setInterval(doZipEvent, 800, TheIndex, zipMacro);
+      } else {
+        InZipState = false;
+        doNav('=');
+      }
+
+      if (InZipState) {
+        // hide controls so they can't be clicked during the zip.
+        document.getElementById('fArrow').style.display = "none";
+        document.getElementById('f2Arrow').style.display = "none";
+        document.getElementById('lArrow').style.display = "none";
+        document.getElementById('l2Arrow').style.display = "none";
+        document.getElementById('rArrow').style.display = "none";
+        document.getElementById('r2Arrow').style.display = "none";
+        document.getElementById('aArrow').style.display = "none";
+        document.getElementById('uArrow').style.display = "none";
+        document.getElementById('dArrow').style.display = "none";
+        document.getElementById('wArrow').style.display = "none";
+        document.getElementById('qArrow').style.display = "none";
+        document.getElementById('bArrow').style.display = "none";
+
+        document.getElementById('zButton').style.display = "none";
+        document.getElementById('oButton').style.display = "none";
+        document.getElementById('cButton').style.display = "none";
+        document.getElementById('eButton').style.display = "none";
+        document.getElementById('jButton').style.display = "none";
+        document.getElementById('nButton').style.display = "none";
+        document.getElementById('pButton').style.display = "none";
+        document.getElementById('equalButton').style.display = "none";
+        document.getElementById('xButton').style.display = "none";
+      }
+
+    }
+
+    function doZipEvent(idx, dirSeq) {
+      IntervalCount++;
+      var dirChar = dirSeq[IntervalCount - 1];
+      doNav(dirChar);
+
+      var lastDirIdx = dirSeq.length - 1;
+      if (IntervalCount - 1 >= lastDirIdx || IntervalCount > 99) {
+        clearInterval(IntervalId); // Stop the setInterval from firing again
+
+        document.getElementById('HomeButton').style.display = "";
+        InZipState = false;
+
+        // restore visibility of controls so they can be clicked.
+        document.getElementById('fArrow').style.display = "";
+        document.getElementById('f2Arrow').style.display = "";
+        document.getElementById('lArrow').style.display = "";
+        document.getElementById('l2Arrow').style.display = "";
+        document.getElementById('rArrow').style.display = "";
+        document.getElementById('r2Arrow').style.display = "";
+        document.getElementById('aArrow').style.display = "";
+        document.getElementById('uArrow').style.display = "";
+        document.getElementById('dArrow').style.display = "";
+        document.getElementById('wArrow').style.display = "";
+        document.getElementById('qArrow').style.display = "";
+        document.getElementById('bArrow').style.display = "";
+
+        document.getElementById('zButton').style.display = "";
+        document.getElementById('oButton').style.display = "";
+        document.getElementById('cButton').style.display = "";
+        document.getElementById('eButton').style.display = "";
+        document.getElementById('jButton').style.display = "";
+        document.getElementById('nButton').style.display = "";
+        document.getElementById('pButton').style.display = "";
+        document.getElementById('equalButton').style.display = "";
+        document.getElementById('xButton').style.display = "";
+      }
+
+    }
+
+    //-------------------------------------------------------
+    // Lookup arrays used for quick access to tour data.
+    // NOTE: Sparse array usage. If uninit member accessed, returns "undefined"
+    const IdxLen = 1000;
+    const LinksIdx = new Array(IdxLen);
+    const DescIdx = new Array(IdxLen);
+    const VerboseIdx = new Array(IdxLen);
+    const ImagesIdx = new Array(IdxLen);
+
+
+    //============================================================================================
+    function buildLookupIndex() {
+      const start = performance.now();
+      var index = -1;
+      var field = "";
+      var firstSpaceIdx = -1;
+      var firstChar = '';
+      var theLine = "";
+      var descrLine = "";
+      var verboseDesc = "";
+      var imageFilename = "";
+
+      var lines = embeddedData.split("\n"); // Split data into lines
+      for (var ii = 0; ii < lines.length; ii++) { //10; ii++) { //
+        theLine = lines[ii].trim();
+        var parts = theLine.split(" "); // Split each line into fields
+
+        //console.log("In buildLookupIndex(), theLine = " + theLine);
+        firstChar = theLine[0];
+        if (firstChar >= '0' && firstChar <= '9') {
+          // the line starts with a digit, treat it as a link line
+
+          firstSpaceIdx = theLine.indexOf(" ");
+          //field = theLine.slice(0, firstSpaceIdx);
+          field = parts[0];
+          //console.log("Extracted index as string = >" + field + "<");
+          index = parseInt(field);
+          //console.log("Index as int = " + index);
+
+          if (index >= 0 && index < 1000) {
+
+            // TODO check if this index is already used; if so show warning but proceed 
+            if (LinksIdx[index] !== undefined) {
+              window.alert("Warning - line " + ii + ": LinksIdx[" + index + "] already used, contains " + LinksIdx[index]);
+            }
+
+            // save the link line (not including the first field) into the LinksIdx based on the extracted index.  
+            //  This enables sparse-array lookup for speed.
+            LinksIdx[index] = theLine.slice(firstSpaceIdx + 1);
+            //console.log("LinksIdx[" + index + "] = >" + LinksIdx[index] + "<");
+
+            //------------ now determine the image filename for this link line.
+
+            // Create default image filename based on the index; this can be superceded 
+            //  if the destination link line includes a quoted string = image name but without the .jpg
+            ImagesIdx[index] = ImageFilePrefix + field;  // don't include the .jpg, will add later.
+
+            // Check if a quoted filename is provided; if so, it supercedes the index-based name.
+            // Must be the second field of the link line. May include folder name.
+            field = parts[1].trim();
+
+            firstChar = field.charAt(0); // get first char
+
+            if (firstChar == '\"') { // opening dbl quote of optional imageName
+              if (field.charAt(field.length - 1) != '\"') {
+                window.alert("Warning - bad link like syntax for index = " + index + ". Closing dbl quote missing.");
+              }
+
+              // SUPERCEDE the index-based filename
+              ImagesIdx[index] = field.slice(1, field.length - 1) // remove the quotes
+            }
+
+            // check the next line; if starts with non-numeric char treat as Optional description
+            if (ii < lines.length - 1) {
+              descrLine = lines[ii + 1].trim();
+              firstChar = descrLine[0];
+              if ((firstChar >= '0' && firstChar <= '9') || firstChar == '#') {
+                DescIdx[index] = "";
+                continue;  // no descrip found; no need to check for verbose descrip
+              }
+              else {
+                DescIdx[index] = descrLine;
+              }
+              ii += 1;  // <<<<<<<<<< s line in lines[]
+
+              // scan for lines starting with non-digit, treat as verbose descrip 
+              verboseDesc = "";
+              if (ii < lines.length - 1) {
+                //console.log("extract verbose text. ii=" + ii);
+                for (var jj = ii + 1; jj < lines.length; jj++) {
+                  var nextLine = lines[jj].trim();
+                  //console.log(nextLine);
+                  var firstChar = nextLine[0];
+                  if ((firstChar >= '0' && firstChar <= '9') || firstChar == '#') {
+                    break;
+                  }
+                  verboseDesc += nextLine;
+                  ii += 1; // <<<<<<<<<< advance to next line in lines[]
+                }
+              }
+              //console.log("Verbose = >" + verboseDesc + "<");
+
+              VerboseIdx[index] = verboseDesc;
+            }
+          }
+          else {
+            window.alert("Illegal link in buildLookupIndex() = " + index);
+          }
         }
+        if (index == -1) {
+          continue;  // should only happen when the first line of embeddedData starts with non numeric
+        }
+      }
+
+      //console.log("Test of uninit array access. DescIdx[200] = >" + DescIdx[200] + "<");
+
+      const end = performance.now();
+      //console.log(`Execution time: ${end - start} ms`);
+      return (end - start);
+    }
+
+
+
+    //------------------------------------------
+    // Function to lookup data by index 
+    // Fetches the string of link info saved for the passed index,
+    // splits it up into an array of fields, and returns the array.
+    function lookupData(index) {
+
+      if (index < 0 || index > IdxLen - 1) {
+        window.alert("in lookupData(), illegal index received = " + index);
+        return null;
+      }
+
+      var theLine = LinksIdx[index];
+      if (theLine === undefined) {
+        return null;
+      }
+
+      var parts = theLine.split(" "); // Split each line into fields
+
+      TheDescrip = DescIdx[index];
+      if (TheDescrip === undefined) {
+        TheDescrip = "";
+      }
+
+      TheVerboseDescrip = VerboseIdx[index];
+      if (TheVerboseDescrip === undefined) {
+        TheVerboseDescrip = "";
+      }
+
+      return parts;
+
+    }
+
+
+    //----------------------------------------------------------
+    // On page load, look up the link line for the default starting index and
+    //  set up the page appropriately
+    document.addEventListener("DOMContentLoaded", function () {
+
+      if (typeof TourConfig !== 'undefined') {
+        if (TourConfig.PageTitle) document.title = TourConfig.PageTitle;
+        if (TourConfig.MetaDescription) {
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.content = TourConfig.MetaDescription;
+        }
+        if (TourConfig.InfoHtml) {
+          var infoHtmlContainer = document.getElementById('infoHtmlContainer');
+          if (infoHtmlContainer) infoHtmlContainer.innerHTML = TourConfig.InfoHtml;
+        }
+        if (TourConfig.ShortcutsHtml) {
+          var shortcutsHtmlContainer = document.getElementById('shortcutsHtmlContainer');
+          if (shortcutsHtmlContainer) shortcutsHtmlContainer.innerHTML = TourConfig.ShortcutsHtml;
+        }
+      }
+
+      // Pre-process the tour link info from the embeddedData below, placing 
+      // it into arrays so it can be quickly accessed, using the location index as index.
+      var processTimeMs = buildLookupIndex();
+      //window.alert("Lookup build time = " + processTimeMs + " ms");
+
+      // Init state of the starting location in the tour
+      TheRec = lookupData(TheIndex);
+      setNavControlsVisibility();
+
+      document.addEventListener("keydown", function (event) {
+        if (event.keyCode === 37) {
+          // Left arrow was pressed
+          doNav('l');
+        } else if (event.keyCode === 38) {
+          // Up arrow was pressed
+          doNav('f');
+        } else if (event.keyCode === 39) {
+          // Right arrow was pressed
+          doNav('r');
+        } else if (event.keyCode === 40) {
+          // Down arrow was pressed
+          doNav('b');
+        } else if (event.keyCode === 79) {
+          // o key pressed
+          doNav('o');
+        } else if (event.key === 'c') {
+          // o key pressed
+          doNav('c');
+        } else if (event.key === 'e') {
+          // o key pressed
+          doNav('e');
+        } else if (event.key === 'l') {
+          // o key pressed
+          doNav('j');
+        } else if (event.key === 'z') {
+          // o key pressed
+          doNav('z');
+        } else if (event.key === 'h') {
+          // o key pressed
+          doNav('g');
+        } else if (event.key === 'n') {
+          // o key pressed
+          doNav('n');
+        } else if (event.key === 'p') {
+          // o key pressed
+          doNav('p');
+        }
+      });
+
     });
 
-});
-   
-   
-//----------------------------------------------------------
-// If the user exits fullscreen mode by meass other than clicking the "shrink"
-// button (like clicking ESC or the little "x" that appears when mouse hits top)
-// we miss the opportunity to revert the button label toe 'Expand'.  So this
-// event handler does it for us in that case.  
-document.addEventListener("fullscreenchange", (event) => {
-  //window.alert("fullscreenchange!");
-  if (!document.fullscreenElement)
-  {
-    // exiting full screen mode
-    var button = document.getElementById("fullscreenButton");
-    button.innerHTML = "Expand"; 
-  }
-});
-      
 
-//----------------------------------------------------------
-function toggleFullscreen() {
+    //----------------------------------------------------------
+    // If the user exits fullscreen mode by meass other than clicking the "shrink"
+    // button (like clicking ESC or the little "x" that appears when mouse hits top)
+    // we miss the opportunity to revert the button label toe 'Expand'.  So this
+    // event handler does it for us in that case.  
+    document.addEventListener("fullscreenchange", (event) => {
+      //window.alert("fullscreenchange!");
+      if (!document.fullscreenElement) {
+        // exiting full screen mode
+        var button = document.getElementById("fullscreenButton");
+        button.innerHTML = "Expand";
+      }
+    });
 
-    var button = document.getElementById("fullscreenButton");
-    var elem = document.documentElement;
-    if (!document.fullscreenElement) {
+
+    //----------------------------------------------------------
+    function toggleFullscreen() {
+
+      var button = document.getElementById("fullscreenButton");
+      var elem = document.documentElement;
+      if (!document.fullscreenElement) {
         button.innerHTML = "Shrink";
         if (elem.requestFullscreen) {
-            elem.requestFullscreen();
+          elem.requestFullscreen();
         } else if (elem.webkitRequestFullscreen) { /* Safari */
-            elem.webkitRequestFullscreen();
+          elem.webkitRequestFullscreen();
         } else if (elem.msRequestFullscreen) { /* IE11 */
-            elem.msRequestFullscreen();
+          elem.msRequestFullscreen();
         }
-    } else {
+      } else {
         button.innerHTML = "Expand";
         if (document.exitFullscreen) {
-            document.exitFullscreen();
+          document.exitFullscreen();
         } else if (document.webkitExitFullscreen) { /* Safari */
-            document.webkitExitFullscreen();
+          document.webkitExitFullscreen();
         } else if (document.msExitFullscreen) { /* IE11 */
-            document.msExitFullscreen();
+          document.msExitFullscreen();
         }
-    }
-};
+      }
+    };
 
-</script>
+  </script>
 
 </body>
+
 </html>
